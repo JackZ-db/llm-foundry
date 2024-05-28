@@ -11,7 +11,7 @@ from composer.callbacks import (
     OptimizerMonitor,
     RuntimeEstimator,
     SpeedMonitor,
-    globalStragglerDetector,
+    GlobalStragglerDetector,
 )
 
 from llmfoundry.callbacks.async_eval_callback import AsyncEval
@@ -37,7 +37,7 @@ from llmfoundry.callbacks.scheduled_gc_callback import ScheduledGarbageCollector
 from llmfoundry.registry import callbacks, callbacks_with_config
 
 
-callbacks.register('global_straggler_detector_draft', func=globalStragglerDetector)
+callbacks.register('global_straggler_detector_draft', func=GlobalStragglerDetector)
 callbacks.register('lr_monitor', func=LRMonitor)
 callbacks.register('memory_monitor', func=MemoryMonitor)
 callbacks.register('memory_snapshot', func=MemorySnapshot)
