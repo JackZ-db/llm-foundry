@@ -568,10 +568,4 @@ if __name__ == '__main__':
     cfg = om.merge(yaml_cfg, cli_cfg)
     om.resolve(cfg)
     assert isinstance(cfg, DictConfig)
-    start_time = time.time()  # Start timing
-
     main(cfg)  # Call the main function
-
-    end_time = time.time()  # End timing
-    elapsed_time = end_time - start_time
-    print(f"Training took {elapsed_time} seconds.")
