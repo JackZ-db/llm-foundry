@@ -11,10 +11,10 @@ from composer.callbacks import (
     OptimizerMonitor,
     RuntimeEstimator,
     SpeedMonitor,
-    
+    GlobalStragglerDetector,
 )
 
-from composer.callbacks.global_straggler_detector import GlobalStragglerDetector
+
 from composer.callbacks.global_straggler_detector_all import GlobalStragglerDetectorAll
 
 from llmfoundry.callbacks.async_eval_callback import AsyncEval
