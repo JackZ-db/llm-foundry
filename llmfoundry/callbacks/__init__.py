@@ -14,9 +14,6 @@ from composer.callbacks import (
     GlobalStragglerDetector,
 )
 
-
-from composer.callbacks.global_straggler_detector_all import GlobalStragglerDetectorAll
-
 from llmfoundry.callbacks.async_eval_callback import AsyncEval
 from llmfoundry.callbacks.curriculum_learning_callback import CurriculumLearning
 from llmfoundry.callbacks.eval_gauntlet_callback import EvalGauntlet
