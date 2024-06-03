@@ -538,16 +538,6 @@ def main(cfg: DictConfig) -> Trainer:
         trainer.eval()
 
     log.info('Starting training...')
-    """
-    Jack Addition for Testing Port
-    """
-
-    master_port = os.environ.get('MASTER_PORT')
-    log.info(master_port)
-
-    """
-    end
-    """
 
     trainer.fit()
 
